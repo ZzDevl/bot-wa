@@ -32,7 +32,7 @@ Clone this project
 
 ```bash
 > git clone https://github.com/ZzDevl/bot-wa.git
-> cd whatsapp-bot
+> cd bot-wa
 ```
 
 Install the dependencies:
