@@ -426,7 +426,7 @@ module.exports = HandleMsg = async (aruga, message) => {
                     res.forEach(x=>{
                         if (x.jawaban.fotoJawaban.length == 0) {
                             aruga.reply(from, `➸ *Pertanyaan* : ${x.pertanyaan}\n\n➸ *Jawaban* : ${x.jawaban.judulJawaban}\n`, id)
-			    aruga.sendText(from, 'Selesai ✅, donasi kesini ya paypal.me/TheSploit | Pulsa : 085754337101')
+			    aruga.sendText(from, 'Selesai ✅, donasi kesini ya DANA : 0852-3106-1579 | Pulsa : 0852-3106-1579')
                         } else {
                             aruga.reply(from, `➸ *Pertanyaan* : ${x.pertanyaan}\n\n➸ *Jawaban* 〙: ${x.jawaban.judulJawaban}\n\n➸ *Link foto jawaban* : ${x.jawaban.fotoJawaban.join('\n')}`, id)
                         }
@@ -560,7 +560,7 @@ module.exports = HandleMsg = async (aruga, message) => {
                         hehex += '╠➥ '
                         hehex += response.data.data[i].name.transliteration.id.toLowerCase() + '\n'
                             }
-                        hehex += '╚═〘 *A R U G A  B O T* 〙'
+                        hehex += '╚═〘 *ZzDevl BOT* 〙'
                     aruga.reply(from, hehex, id)
                 })
             } catch(err) {
@@ -971,7 +971,7 @@ module.exports = HandleMsg = async (aruga, message) => {
             })
             break
         case 'stalkig':
-            if (args.length == 0) return aruga.reply(from, `Untuk men-stalk akun instagram seseorang\nketik ${prefix}stalkig [username]\ncontoh: ${prefix}stalkig ini.arga`, id)
+            if (args.length == 0) return aruga.reply(from, `Untuk men-stalk akun instagram seseorang\nketik ${prefix}stalkig [username]\ncontoh: ${prefix}stalkig zahidal__`, id)
             const igstalk = await rugaapi.stalkig(args[0])
             const igstalkpict = await rugaapi.stalkigpict(args[0])
             await aruga.sendFileFromUrl(from, igstalkpict, '', igstalk, id)
@@ -1273,7 +1273,7 @@ module.exports = HandleMsg = async (aruga, message) => {
                 hehex += '╠➥'
                 hehex += ` @${groupMem[i].id.replace(/@c.us/g, '')}\n`
             }
-            hehex += '╚═〘 *A R U G A  B O T* 〙'
+            hehex += '╚═〘 *ZzDevl BOT* 〙'
             await aruga.sendTextWithMentions(from, hehex)
             break
 		case 'simisimi':
