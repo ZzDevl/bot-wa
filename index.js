@@ -45,9 +45,9 @@ lolcatjs.options.colors = true;
 
 const start = async (tobz = new Client()) => {
         console.log('------------------------------------------------')
-        lolcatjs.fromString(color(figlet.textSync('ELAINA BOT', { horizontalLayout: 'full' })))
+        lolcatjs.fromString(color(figlet.textSync('ZzDevl BOT', { horizontalLayout: 'full' })))
         console.log('------------------------------------------------')
-        lolcatjs.fromString('[DEV] TOBZ')
+        lolcatjs.fromString('[DEV] ZzDevl')
         lolcatjs.fromString('[SERVER] Server Started!')
         tobz.onAnyMessage((fn) => messageLog(fn.fromMe, fn.type))
         // Force it to keep the current session
@@ -97,7 +97,7 @@ const start = async (tobz = new Client()) => {
                     }
                 }
             }else{
-                await tobz.sendText(chat.id, 'Elaina sedang maintenance, coba lain hari').then(async () => {
+                await tobz.sendText(chat.id, 'Bot sedang maintenance, coba lain hari').then(async () => {
                     tobz.deleteChat(chat.id)
                     tobz.leaveGroup(chat.id)
                 })
